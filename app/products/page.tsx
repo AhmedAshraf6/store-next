@@ -5,7 +5,7 @@ async function ProductsPage({
 }: {
   searchParams: Promise<{ layout: string; search?: string }>;
 }) {
-  const { layout, search } = await searchParams;
+  const { layout = 'grid', search = '' } = await searchParams;
 
   return <ProductsContainer layout={layout} search={search} />;
 }
