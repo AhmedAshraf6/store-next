@@ -15,7 +15,6 @@ async function ProductsContainer({
   const products = await fetchAllProducts({ search });
   const totalProducts = products.length;
   const searchTerm = search ? `&search=${search}` : '';
-  console.log(products);
 
   return (
     <>
